@@ -1,0 +1,21 @@
+{
+  "description": "",
+  "manifest_version": 2,
+  "name": "just-animate-tools",
+  "version": "1.0",
+  "author": "Christopher Wallis",
+  "homepage_url": "https://just-animate.github.io",
+  "icons": {
+    "48": "icons/star.png"
+  },
+  
+  "background": {
+    "scripts": ["background_scripts/background.js"]
+  },
+  
+  "permissions": [
+      "<all_urls>"
+  ],
+  
+  "devtools_page": "main.html" 
+}
