@@ -2,7 +2,7 @@ var path = require('path');
 var webpack = require('webpack');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
 
-var basePath = __dirname;
+var basePath = path.join(__dirname, '../');
 
 module.exports = {
   context: path.join(basePath, 'src'),
