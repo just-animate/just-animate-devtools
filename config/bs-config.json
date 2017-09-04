@@ -1,5 +1,5 @@
 {
     "port": 8000,
-    "files": ["./src/**/*.{html,htm,css,js,png,json}"],
+    "files": ["./plugin/**/*.{html,htm,css,js,png,json}"],
     "server": { "baseDir": "./plugin" }
 }

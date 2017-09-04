@@ -1,11 +1,12 @@
 import Vue from 'vue'
 import { App } from './components'
-
-// import base styles
-import './styles'
+import { applyBaseStyles } from './styles/layout'
 
 // bootstrap application
 new Vue({  
   el: '#root',
+  created() {
+    applyBaseStyles()
+  },
   render: (h) => h(App)
 })
