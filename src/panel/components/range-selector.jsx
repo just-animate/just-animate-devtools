@@ -4,16 +4,14 @@ import { style } from 'typestyle'
 
 @Component
 export class RangeSelector extends Vue {
-    styles = style({ 
+    styles = style({
         $nest: {
             '>*': {
                 marginLeft: 4,
                 marginRight: 4,
                 verticalAlign: 'middle'
             },
-            span: {
-                
-            },
+            span: {},
             input: {
                 width: 65
             }
@@ -21,7 +19,7 @@ export class RangeSelector extends Vue {
     })
     render() {
         return (
-            <div class={this.styles}> 
+            <div class={this.styles}>
                 <input type="number" step="1" placeholder="0" />
                 <span>of</span>
                 <input type="number" step="1" placeholder="1000" />

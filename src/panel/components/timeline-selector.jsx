@@ -1,11 +1,11 @@
 import Vue from 'vue'
 import Component from 'vue-class-component'
 import { Prop } from 'vue-property-decorator'
-import { style } from 'typestyle' 
+import { style } from 'typestyle'
 import { px } from 'csx'
 
 @Component
-export class TimelineSelector extends Vue { 
+export class TimelineSelector extends Vue {
     render() {
         return (
             <div>

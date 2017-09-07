@@ -11,6 +11,6 @@ export class TargetPanel extends Vue {
         height: '100%'
     })
     render() {
-        return <div class={this.styles}></div>
+        return <div class={this.styles} />
     }
 }

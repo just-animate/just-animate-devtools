@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import Component from 'vue-class-component'
-import { Prop } from 'vue-property-decorator'
-import { icons } from './icons'
+import { Prop } from 'vue-property-decorator' 
 import { style, classes } from 'typestyle/lib'
 import { colors } from '../styles/colors'
 
@@ -38,12 +37,12 @@ const typeStyles = {
 
 @Component
 export class ButtonIcon extends Vue {
+    /**  @type {string} */
+    @Prop() type
     
-    @Prop() type: keyof typeof typeStyles
-    
-    @Prop() iconName: keyof typeof icons
+    /**  @type {string} */
+    @Prop() iconName
 
-    
     render() {
         const styles = classes(baseIconClass, typeStyles[this.type])
         

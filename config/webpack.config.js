@@ -7,12 +7,12 @@ var basePath = path.join(__dirname, '../');
 module.exports = {
   context: path.join(basePath, 'src'),
   resolve: {
-    extensions: ['.js', '.ts', '.tsx'],
+    extensions: ['.js', '.jsx'],
   },
   entry: {
-    'panel/panel': './panel/panel.tsx',
-    'background_scripts/background': './background_scripts/background.ts',
-    'main': './main.ts'
+    'panel/panel': './panel/panel.jsx',
+    'background_scripts/background': './background_scripts/background.js',
+    'main': './main.js'
   },
   output: {
     path: path.join(basePath, 'plugin'),
@@ -21,7 +21,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.tsx?$/,
+        test: /\.jsx?$/,
         exclude: /node_modules/,
         use: {
           loader: 'awesome-typescript-loader',

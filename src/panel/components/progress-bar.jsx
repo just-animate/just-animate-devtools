@@ -5,7 +5,8 @@ import { style } from 'typestyle'
 
 @Component
 export class ProgressBar extends Vue {
-    @Prop() progress: number
+    /**  @type {number} */
+    @Prop() progress
     
     styles = style({
         backgroundColor: 'red',
