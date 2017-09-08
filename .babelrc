@@ -1,8 +1,24 @@
 {
-  "presets": [
-    "env"
-  ],
-  "plugins": [
-    "transform-vue-jsx"
-  ]
+    "presets": [
+        [
+            "env",
+            {
+                "modules": false,
+                "targets": {
+                    "browsers": ["last 2 versions", "chrome >= 49", "firefox >= 49", "> 5%"]
+                },
+                "debug": false,
+                "loose": true,
+                "useBuiltIns": true
+            }
+        ]
+    ],
+    "plugins": [
+        [
+            "transform-object-rest-spread",
+            {
+                "useBuiltIns": true
+            }
+        ]
+    ]
 }

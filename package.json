@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --config ./config/webpack.config.js",
+    "build:prod": "NODE_ENV=production webpack --config ./config/webpack.config.js",
     "clean": "node_modules/.bin/del-cli plugin",
     "rebuild": "npm i && npm run clean && npm run build",
     "start": "npm i && npm run clean && concurrently \"npm run watch\" \"npm run serve\"",
@@ -14,29 +15,24 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "awesome-typescript-loader": "^3.2.2",
-    "babel-core": "^6.25.0",
-    "babel-helper-vue-jsx-merge-props": "^2.0.2",
-    "babel-plugin-syntax-jsx": "^6.18.0",
-    "babel-plugin-transform-vue-jsx": "^3.5.0",
-    "babel-preset-env": "1.6.0",
+    "babel-core": "^6.0.0",
+    "babel-loader": "^6.0.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
     "concurrently": "^3.5.0",
     "copy-webpack-plugin": "^4.0.1",
+    "cross-env": "^3.0.0",
+    "css-loader": "^0.25.0",
     "del-cli": "^1.1.0",
-    "extract-text-webpack-plugin": "^3.0.0",
-    "file-loader": "^0.11.2",
-    "html-webpack-plugin": "^2.30.1",
+    "file-loader": "^0.9.0",
     "lite-server": "^2.3.0",
-    "typescript": "^2.5.2",
-    "url-loader": "^0.5.9",
-    "webpack": "^3.4.1",
-    "webpack-dev-server": "^2.6.1"
+    "node-sass": "^4.5.0",
+    "sass-loader": "^5.0.1",
+    "vue-loader": "^12.1.0",
+    "vue-template-compiler": "^2.3.3",
+    "webpack": "^2.6.1"
   },
   "dependencies": {
-    "csx": "^8.4.0",
-    "typestyle": "^1.4.0",
-    "vue": "^2.4.2",
-    "vue-class-component": "^5.0.2",
-    "vue-property-decorator": "^5.2.1"
+    "vue": "^2.4.2"
   }
 }

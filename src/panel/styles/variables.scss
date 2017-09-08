@@ -1,0 +1,13 @@
+/* COLORS */
+$baseTextColor: hsl(0, 0, 20%);
+$accentColor: hsl(215, 26%, 66%);
+$buttonBg: hsl(178, 41%, 63%);
+$buttonFg: $baseTextColor;
+$borderColor1: hsl(0, 0, 85%);
+$borderColor2: hsl(0, 0, 62%);
+$fg: baseTextColor;
+$toolbarBg: hsl(0, 0, 92%);
+
+/* BORDERS */
+$borderLevel1: solid 2px $borderColor1;
+$borderLevel2: solid 3px $borderColor2;

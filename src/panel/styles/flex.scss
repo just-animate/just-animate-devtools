@@ -1,0 +1,20 @@
+@mixin flex-fixed($basis) {
+    flex-basis: $basis;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+@mixin flex-auto() {
+    flex-basis: auto;
+    flex-shrink: 1;
+    flex-grow: 1;
+    position: relative;
+}
+
+@mixin flex-fill-container($direction) {
+    align-items: stretch;
+    display: flex;
+    flex-direction: $direction;
+    height: 100%;
+    justify-content: space-between;
+}
