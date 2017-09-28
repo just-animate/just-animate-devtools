@@ -1,0 +1,42 @@
+button,
+input,
+label,
+meter,
+progress,
+select,
+textarea {
+    display: inline-block;
+    font-size: 1rem;
+    margin: #{$v-margin / 2} #{$h-margin / 2};
+    padding: #{$v-padding / 2} #{$h-padding / 2};
+    vertical-align: middle;
+}
+
+textarea {
+    // align textarea to the top
+    vertical-align: top;
+}
+
+input {
+    border: $input-border-style $input-border-width $input-border-color;
+    background-color: $input-background-color;
+} 
+
+button {
+    border: $button-border-style $button-border-width $button-border-color;
+    background-color: $button-background-color;
+} 
+ 
+fieldset { 
+    background: $fieldset-background;
+    border: $fieldset-border-style $fieldset-border-width $fieldset-border-color; 
+    margin: $v-margin $h-margin; 
+    padding: #{$v-padding} #{$h-padding};
+
+    > legend {
+        padding: #{$v-padding} #{$h-padding};
+    }
+    > legend:empty {
+        padding: 0
+    }
+}

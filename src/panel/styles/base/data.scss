@@ -1,0 +1,45 @@
+table {
+    border-collapse: collapse;
+	border-spacing: 0;
+    max-width: 100%;
+    table-layout: fixed;
+    width: 100%;
+    max-width: calc(100% - (#{$h-margin * 2}));
+}
+
+table, tbody, tfoot, thead { 
+    margin: #{$v-margin} #{$h-margin};
+}
+
+table > caption {
+    padding: #{$v-padding} #{$h-padding};
+}
+
+th, td {
+    padding: #{$v-padding / 2} #{$h-padding / 2};
+}
+
+thead, tfoot {
+    th, td {
+        padding: #{$v-padding} #{$h-padding / 2}; 
+        text-align: left;
+    }
+}
+
+thead {
+    th, td { 
+        font-weight: bold; 
+    }
+}
+
+dl {
+    padding: #{$v-padding} #{$h-padding};
+}
+
+ol, ul, dl {
+    margin: 1rem 0;
+}
+
+li {
+    padding: #{$v-padding / 2} 0;
+}

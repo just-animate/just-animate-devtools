@@ -1,0 +1,147 @@
+//* content */
+$body-background: white;
+$base-font-family: 'PT Sans', sans-serif;
+$base-font-weight: normal;
+$mono-font-family: 'Source Code Pro', monospace;
+$font-base: 12;
+$small-caps-color: gray;
+$copy-color: rgba(0, 0, 0, 0.54);
+
+//* headings */
+$heading-color: #222;
+$heading-font-family: 'PT Sans', san-serif;
+$heading-font-sizes: (
+    h1: round($font-base * 2.5),
+    h2: round($font-base * 2.1),
+    h3: round($font-base * 1.8),
+    h4: round($font-base * 1.5),
+    h5: round($font-base * 1.2),
+    h6: round($font-base * 1.1)
+);
+
+$line-height: 1.45;
+$small-caps-weight: 600;
+$small-print-size: 0.8em;
+
+//* whitespace */
+$v-padding: 4px;
+$h-padding: 8px;
+$v-margin: 5px;
+$h-margin: 5px;
+
+//* button styles */
+$button-background-color: transparent;
+$button-border-color: transparent;
+$button-border-style: none;
+$button-border-width: 0;
+
+//* input styles */
+$input-background-color: #ffffff;
+$input-border-color: #ccc;
+$input-border-style: solid;
+$input-border-width: thin;
+
+//* cite styles */
+$cite-display: block;
+$cite-align: right;
+$cite-font-size: inherit;
+
+//* fieldset styles */
+$fieldset-background: white;
+$fieldset-border-color: #cccccc;
+$fieldset-border-style: solid;
+$fieldset-border-width: thin;
+
+//* import styles, must come last */
+@import '../base/_index';
+
+//* custom styles */
+$shadow-1:  0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+fieldset > legend {
+    background-color: #f3f3f3;
+    border-bottom: solid 1px #ccc;
+    border-radius: 5px;
+    font-weight: bold;
+    left: 0;
+    right: 0;
+    position: absolute;
+    top: 0;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+fieldset { 
+    padding-top: 2.5rem;
+    position: relative;
+    box-shadow: $shadow-1;
+}
+
+section {
+    margin: #{$v-margin} #{$h-margin};
+    padding: #{$v-padding} #{$h-padding};
+    border-bottom: solid thin #cccccc;
+}
+
+input:not([type='radio']):not([type='checkbox']),
+select {
+    background: none;
+    border: none;
+    border-bottom: solid 1px #cccccc;
+    border-radius: 0;
+    outline: none;
+}
+
+select {   
+    position: relative;
+
+    &::after {
+        border-bottom: solid thin #ccc;
+        width: 100%;
+    }
+}
+
+button {
+    outline: none; 
+}
+
+textarea {
+    border-color: #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+:-webkit-autofill {
+    // find a better way
+    box-shadow: 0 0 0px 1000px white inset;
+}
+
+table {
+    border: solid 1px #cccccc;
+}
+
+thead th {
+    background-color: white;
+    border-bottom: solid thin #cccccc;
+}
+
+tfoot tr {
+    background-color: #ededed;
+    border-top: solid thin #cccccc;
+}
+
+th:not(:first-child) , td:not(:first-child) {
+    border-left: solid thin #cccccc;
+}
+
+table > tr,
+tbody > tr { 
+
+    &:nth-child(2n) > td {
+        background: white;
+    }
+    
+    &:nth-child(2n - 1) > td {
+        background: #ededed;
+    }
+}

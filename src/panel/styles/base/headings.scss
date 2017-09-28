@@ -1,0 +1,20 @@
+
+/* headings */
+h1, h2, h3, h4, h5, h6 {
+    @if $heading-font-family != $base-font-family {
+        font-family: $heading-font-family;
+    }
+
+    color: $heading-color;
+    line-height: 1;
+    margin-top: 0;
+    padding: $v-padding $h-padding;
+    text-rendering: optimizeLegibility;
+}
+
+@each $h, $size in $heading-font-sizes {
+    #{$h} { 
+        font-size: #{$size/$font-base}rem;
+        margin-top: #{$size/($font-base * 4)}rem;
+    }
+}

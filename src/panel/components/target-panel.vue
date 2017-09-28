@@ -7,11 +7,8 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-@import '../styles/variables.scss';
-
-.target-panel {
-    border-right: $borderLevel2;
+<style lang="scss" scoped> 
+.target-panel { 
     height: 100%;
 }
 </style>

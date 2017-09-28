@@ -41,18 +41,13 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-@import '../styles/variables';
-@import '../styles/flex';
+<style lang="scss" scoped> 
+@import '../styles/mixins/flex';
 
 .main-toolbar {
-    align-items: stretch;
-    background-color: $toolbarBg;
-    border-bottom: $borderLevel1;
-    display: flex;
-    height: 40px;
-    justify-content: space-between;
-    line-height: 40px;
+    align-items: stretch; 
+    display: flex; 
+    justify-content: space-between; 
     position: relative;
 }
 
@@ -66,10 +61,9 @@ export default {
 
 .left-panel,
 .right-panel {
-    @include flex-fixed(320px);
+    @include flex-fixed(280px);
 
-    align-items: center;
-    border-right: $borderLevel2;
+    align-items: center; 
     display: flex;
     justify-content: space-around;
 }

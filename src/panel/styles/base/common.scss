@@ -1,0 +1,56 @@
+/* global */
+html {
+    font-weight: $base-font-weight;
+    font-family: $base-font-family;
+    font-size: #{$font-base}px;
+    line-height: $line-height;
+} 
+
+body {
+    background: $body-background;
+    color: $copy-color;    
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    word-wrap: break-word; 
+}
+
+p, header, footer, main {
+    padding: $v-padding $h-padding;
+}
+
+/* content */
+small {
+    font-size: $small-print-size;
+}
+
+abbr { 
+    color: $small-caps-color;
+    -webkit-font-variant: small-caps;
+    -moz-font-variant: small-caps;
+    -ms-font-variant: small-caps;
+    font-variant: small-caps;
+    font-weight: $small-caps-weight;
+    text-transform: lowercase;
+
+    &[title]:hover {
+        cursor: help;
+    }
+}
+
+/* hyphenation */
+input,
+abbr,
+acronym,
+blockquote,
+code,
+kbd,
+q,
+samp,
+var { 
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+}

@@ -1,0 +1,14 @@
+code { 
+    font-family: $mono-font-family;
+    white-space: pre;
+}
+
+pre { 
+    padding: $v-padding $h-padding;
+    white-space: pre;
+
+    > code {
+        word-wrap: normal; 
+        white-space: pre-wrap;
+    }
+}

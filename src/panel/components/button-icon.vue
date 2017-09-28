@@ -14,31 +14,24 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../styles/variables';
-$iconSize: 13px;
+ $iconSize: 13px;
 
-.base-icon {
-    cursor: pointer;
-    height: $iconSize;
-    margin: 2px;
-    padding: 5px 10px;
-    position: relative;
-    transform: scale(1);
-    transition-property: transform;
-    transition-duration: 300ms;
-    width: $iconSize;
-    z-index: 1;
-    &:hover {
-        transform: scale(1.1);
-        z-index: 2;
-    } 
-    
-    // &.flat { }
-    &.normal {
-        background-color: $buttonBg;
-        fill: $buttonFg;
-        border: solid thin darkgray;
-        border-radius: 5px;
-    }
-}
+ .base-icon {
+     cursor: pointer;
+     height: 1rem;
+     position: relative;
+     transform: scale(1);
+     transition-property: transform;
+     transition-duration: 300ms;
+     width: $iconSize;
+     z-index: 1;
+
+     &:hover {
+         transform: scale(1.1);
+         z-index: 2;
+     } // &.flat { }
+     &.normal {
+         border-radius: 5px;
+     }
+ }
 </style>

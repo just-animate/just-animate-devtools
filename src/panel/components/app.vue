@@ -1,7 +1,7 @@
 <template>
     <div id="app">
         <icon-defs />
-        <div class="toolbar">
+        <div class="toolbar paper level-1">
             <main-toolbar />
         </div>
         <div class="scroll-container">
@@ -43,12 +43,12 @@ export default {
 
 <style lang="scss">
 // import base styles
-@import '../styles/layout.scss';
+@import '../styles/themes/submarine.scss';
+@import '../styles/base/shadows.scss';
 </style>
 
-<style lang="scss" scoped>
-@import '../styles/variables';
-@import '../styles/flex';
+<style lang="scss" scoped> 
+@import '../styles/mixins/flex';
 
 #app {
     @include flex-fill-container(column);
@@ -62,7 +62,7 @@ export default {
 
 .left-panel,
 .right-panel {
-    @include flex-fixed(320px);
+    @include flex-fixed(280px);
 }
 
 .center-panel {
@@ -70,6 +70,7 @@ export default {
 }
 
 .toolbar {
-    @include flex-fixed(30px);
+    @include flex-fixed(2.15rem);
+    background-color: hsla(0, 0%, 94%, 1);
 }
 </style>
