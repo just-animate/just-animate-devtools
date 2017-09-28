@@ -22,7 +22,7 @@ export default {
     data() {
         return {
             animationProps: [
-                { name: 'x', value: '', type: 'length' },
+                { name: 'x', value: '', type: 'number' },
                 { name: 'y', value: '', type: 'length' },
                 { name: 'opacity', value: '', type: 'number' },
                 { name: 'scale', value: '', type: 'number' },
